@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <div class="container">
         <div class="header-items">
@@ -50,7 +51,64 @@
         </div>
       </div>
     </header>
+    <!-- Main -->
+    <main>
+      <section id="Carousel-Section">
+        <div class="container">
+          <div class="carousel-item" id="carousel">
+            <div class="slide is-active" data-color="#4f7dff">
+              <img
+                src="images/Artboard-1.png"
+                alt="Slide 1"
+                draggable="false"
+              />
+            </div>
+            <div class="slide" data-color="#a855f7">
+              <img
+                src="images/Artboard-2.png"
+                alt="Slide 2"
+                draggable="false"
+              />
+            </div>
+            <div class="slide" data-color="#22d3c9">
+              <img
+                src="images/Artboard-3.png"
+                alt="Slide 3"
+                draggable="false"
+              />
+            </div>
+            <div class="slide" data-color="#f5a524">
+              <img
+                src="images/Artboard-4.png"
+                alt="Slide 4"
+                draggable="false"
+              />
+            </div>
+            <div class="slide" data-color="#fb7185">
+              <img
+                src="images/Artboard-5.png"
+                alt="Slide 5"
+                draggable="false"
+              />
+            </div>
 
+            <button class="arrow prev" id="prevBtn" aria-label="Previous slide">
+              <ion-icon class="arrows" name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="arrow next" id="nextBtn" aria-label="Next slide">
+              <ion-icon
+                class="arrows"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+
+            <div class="dots" id="dots"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="Techora.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
