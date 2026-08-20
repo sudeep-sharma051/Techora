@@ -4,6 +4,7 @@
   --text-color-white: #ffffff;
   --secondary-text-color: #6f7da1;
   --background-light: #ffffff;
+  --background-semilight: #f1f1f1;
   --background-dark: #0f172a;
   --border-color: #d5d8dc;
 }
@@ -18,6 +19,7 @@
   margin: 0 auto;
   padding-inline: 1rem;
 }
+
 /* Header-styling */
 header {
   background-color: var(--background-light);
@@ -227,6 +229,236 @@ nav {
   width: 22px;
   border-radius: 999px;
   background: var(--primary-color);
+}
+
+/* ========================================
+   FEATURED CATEGORIES
+======================================== */
+
+#Featured-Categories-Section {
+  padding: 50px 0;
+  background-color: var(--background-light);
+}
+
+.featured-items {
+  width: 100%;
+}
+
+/* Section heading */
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.section-heading a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-heading a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   CATEGORY GRID
+======================================== */
+
+.categories-cards {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 18px;
+  width: 100%;
+}
+
+/* ========================================
+   CATEGORY CARD
+======================================== */
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
+  color: var(--text-color);
+
+  min-width: 0;
+
+  background-color: var(--background-light);
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+
+  border-color: transparent;
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+/* ========================================
+   CATEGORY IMAGE
+======================================== */
+
+.category-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  background-color: #f7f7f7;
+
+  overflow: hidden;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: transform 250ms ease;
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.08);
+}
+
+/* ========================================
+   CATEGORY INFORMATION
+======================================== */
+
+.category-info {
+  width: 100%;
+  padding: 12px 8px 15px;
+
+  text-align: center;
+}
+
+.category-info h3 {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category-info p {
+  margin: 4px 0 0;
+
+  color: var(--secondary-text-color);
+
+  font-size: 11px;
+  font-weight: 400;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+/* Large laptops */
+
+@media (max-width: 1300px) {
+  .categories-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablets */
+
+@media (max-width: 900px) {
+  #Featured-Categories-Section {
+    padding: 40px 0;
+  }
+
+  .categories-cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Small tablets / large phones */
+
+@media (max-width: 650px) {
+  .section-heading h2 {
+    font-size: 22px;
+  }
+
+  .categories-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .category-info h3 {
+    font-size: 13px;
+  }
+}
+
+/* Phones */
+
+@media (max-width: 400px) {
+  #Featured-Categories-Section {
+    padding: 30px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 18px;
+  }
+
+  .section-heading h2 {
+    font-size: 20px;
+  }
+
+  .section-heading a {
+    font-size: 12px;
+  }
+
+  .categories-cards {
+    gap: 10px;
+  }
+
+  .category-image {
+    padding: 12px;
+  }
+
+  .category-info {
+    padding: 10px 5px 12px;
+  }
+
+  .category-info h3 {
+    font-size: 12px;
+  }
+
+  .category-info p {
+    font-size: 10px;
+  }
 }
 
 /* Responsiveness */
