@@ -379,6 +379,56 @@ nav {
   font-size: 11px;
   font-weight: 400;
 }
+/* ========================================
+   WHY US??
+======================================== */
+
+.whyus-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.whyus-content .whyus-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 120px;
+  background-color: var(--secondary-background);
+  border-radius: 12px;
+}
+.whyus-content .whyus-items .whyus-items-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 30%;
+  height: 100%;
+}
+.whyus-content .whyus-items .whyus-items-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+.whyus-content .whyus-items .whyus-items-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.whyus-content .whyus-items .whyus-items-info p {
+  margin: 4px 0 0;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  font-weight: 400;
+}
 
 /* ========================================
    RESPONSIVE
@@ -398,7 +448,6 @@ nav {
   #Featured-Categories-Section {
     padding: 40px 0;
   }
-
   .categories-cards {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
@@ -428,7 +477,9 @@ nav {
   #Featured-Categories-Section {
     padding: 30px 0;
   }
-
+  /* #whyus {
+    padding: 20px 140px;
+  } */
   .section-heading {
     margin-bottom: 18px;
   }
@@ -441,7 +492,8 @@ nav {
     font-size: 12px;
   }
 
-  .categories-cards {
+  .categories-cards,
+  .whyus-content {
     gap: 10px;
   }
 
@@ -468,6 +520,10 @@ nav {
   .header-items .logo .logo-name {
     display: block;
   }
+  .whyus-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
 }
 @media (min-width: 650px) {
   header .search {
@@ -476,6 +532,10 @@ nav {
     gap: 1rem;
     justify-content: center;
     align-items: center;
+  }
+  .whyus-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 }
 @media (min-width: 800px) {
@@ -516,5 +576,10 @@ nav {
   }
   .header-items .search .icon {
     left: 93.4%;
+  }
+  .whyus-content {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 20px;
   }
 }
