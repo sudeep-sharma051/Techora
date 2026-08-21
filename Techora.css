@@ -120,7 +120,7 @@ nav {
   opacity: 1;
   color: var(--text-color);
 }
-.header-items .actions button {
+.header-items .actions .actionbutton {
   width: 100px;
   height: 35px;
   border-radius: 35px;
@@ -129,7 +129,7 @@ nav {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
-.header-items .actions button:hover {
+.header-items .actions .actionbutton:hover {
   transition: 200ms;
   color: var(--text-color-white);
   background-color: var(--primary-color);
@@ -431,13 +431,169 @@ nav {
 }
 
 /* ========================================
+   BEST SELLER CATEGORIES
+======================================== */
+
+#best-seller {
+  padding: 50px 0;
+  background-color: var(--background-light);
+}
+
+.bestseller-items {
+  width: 100%;
+}
+
+/* Section heading */
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.section-heading a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-heading a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   BESTSELLER GRID
+======================================== */
+
+.bestseller-cards {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 18px;
+  width: 100%;
+}
+
+/* ========================================
+   BESTSELLER CARD
+======================================== */
+
+.bestseller-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
+  color: var(--text-color);
+
+  min-width: 0;
+
+  background-color: var(--background-light);
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+.bestseller-card:hover {
+  transform: translateY(-5px);
+
+  border-color: transparent;
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+/* ========================================
+   BESTSELLER IMAGE
+======================================== */
+
+.bestseller-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--secondary-background);
+  overflow: hidden;
+  transition: 100ms ease-in-out;
+}
+.bestseller-image:hover {
+  background-color: #aebcdd;
+}
+
+.bestseller-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: transform 250ms ease;
+}
+
+.bestseller-card:hover .bestserller-image img {
+  transform: scale(1.08);
+}
+
+/* ========================================
+   BESTSELLER INFORMATION
+======================================== */
+
+.bestseller-info {
+  width: 100%;
+  padding: 12px 8px 15px;
+
+  text-align: center;
+}
+
+.bestseller-info h3 {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bestseller-info .bestsellerbutton {
+  padding: 6px 8px;
+  border: 2px solid var(--primary-color);
+  border-radius: 18px;
+  margin: 12px 0 0;
+  color: var(--text-color);
+  font-size: 11px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.bestseller-info .bestsellerbutton:hover {
+  transition: 200ms;
+  color: var(--text-color-white);
+  background-color: var(--primary-color);
+}
+
+/* ========================================
    RESPONSIVE
 ======================================== */
 
 /* Large laptops */
 
 @media (max-width: 1300px) {
-  .categories-cards {
+  .categories-cards,
+  .bestseller-cards {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -445,10 +601,12 @@ nav {
 /* Tablets */
 
 @media (max-width: 900px) {
-  #Featured-Categories-Section {
+  #Featured-Categories-Section,
+  #best-seller {
     padding: 40px 0;
   }
-  .categories-cards {
+  .categories-cards,
+  .bestseller-cards {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
   }
@@ -461,12 +619,14 @@ nav {
     font-size: 22px;
   }
 
-  .categories-cards {
+  .categories-cards,
+  .bestseller-cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
 
-  .category-info h3 {
+  .category-info h3,
+  .bestseller-info h3 {
     font-size: 13px;
   }
 }
@@ -474,12 +634,10 @@ nav {
 /* Phones */
 
 @media (max-width: 400px) {
-  #Featured-Categories-Section {
+  #Featured-Categories-Section,
+  #best-seller {
     padding: 30px 0;
   }
-  /* #whyus {
-    padding: 20px 140px;
-  } */
   .section-heading {
     margin-bottom: 18px;
   }
@@ -493,23 +651,28 @@ nav {
   }
 
   .categories-cards,
-  .whyus-content {
+  .whyus-content,
+  .bestseller-cards {
     gap: 10px;
   }
 
-  .category-image {
+  .category-image,
+  .bestseller-image {
     padding: 12px;
   }
 
-  .category-info {
+  .category-info,
+  .bestseller-info {
     padding: 10px 5px 12px;
   }
 
-  .category-info h3 {
+  .category-info h3,
+  .bestseller-info h3 {
     font-size: 12px;
   }
 
-  .category-info p {
+  .category-info p,
+  .bestseller-info .bestsellerbutton {
     font-size: 10px;
   }
 }
