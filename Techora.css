@@ -586,6 +586,30 @@ nav {
 }
 
 /* ========================================
+   DEALS SECTION
+======================================== */
+
+#deals {
+  padding: 10px 0;
+  background-color: var(--background-light);
+}
+.deals-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+.deals-content .deals-item {
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.484);
+}
+.deals-content .deals-item img {
+  border-radius: 12px;
+}
+
+/* ========================================
    RESPONSIVE
 ======================================== */
 
@@ -687,6 +711,13 @@ nav {
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
   }
+  .deals-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .deals-content .deals-item {
+    width: 100%;
+    height: 180px;
+  }
 }
 @media (min-width: 650px) {
   header .search {
@@ -700,6 +731,13 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
+  .deals-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .deals-content .deals-item {
+    width: 100%;
+    height: 240px;
+  }
 }
 @media (min-width: 800px) {
   header .search {
@@ -707,6 +745,13 @@ nav {
   }
   .header-items .search .icon {
     left: 86.5%;
+  }
+  .deals-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .deals-content .deals-item {
+    width: 100%;
+    height: 280px;
   }
 }
 @media (min-width: 1000px) {
@@ -716,6 +761,13 @@ nav {
     justify-content: center;
     align-items: center;
   }
+  .deals-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .deals-content .deals-item {
+    width: 100%;
+    height: 200px;
+  }
 }
 @media (min-width: 1200px) {
   header .search {
@@ -723,6 +775,13 @@ nav {
   }
   .header-items .search .icon {
     left: 91.2%;
+  }
+  .deals-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .deals-content .deals-item {
+    width: 100%;
+    height: 280px;
   }
 }
 @media (min-width: 1250px) {
