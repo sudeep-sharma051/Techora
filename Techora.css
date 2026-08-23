@@ -543,7 +543,7 @@ nav {
   transition: transform 250ms ease;
 }
 
-.bestseller-card:hover .bestserller-image img {
+.bestseller-card:hover .bestseller-image img {
   transform: scale(1.08);
 }
 

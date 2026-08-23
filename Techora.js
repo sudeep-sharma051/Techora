@@ -41,7 +41,6 @@
   function prev() {
     goTo(current - 1);
   }
-
   // ---- autoplay ----
   function startAutoplay() {
     stopAutoplay();
@@ -50,7 +49,6 @@
   function stopAutoplay() {
     if (autoplayTimer) clearInterval(autoplayTimer);
   }
-
   // ---- arrow buttons ----
   [prevBtn, nextBtn].forEach((btn) => {
     btn.addEventListener("pointerdown", (e) => e.stopPropagation()); // don't let this trigger a drag
@@ -63,7 +61,6 @@
     next();
     startAutoplay();
   });
-
   // ---- drag to navigate (works for mouse AND touch via Pointer Events) ----
   let isDragging = false;
   let startX = 0;
@@ -96,7 +93,6 @@
     carousel.classList.remove("dragging");
     startAutoplay();
   });
-
   goTo(0);
   startAutoplay();
 })();
