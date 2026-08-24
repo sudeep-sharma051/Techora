@@ -134,6 +134,125 @@ nav {
   color: var(--text-color-white);
   background-color: var(--primary-color);
 }
+/* ========================================
+   PRODUCTS MEGA MENU
+======================================== */
+
+.nav-dropdown {
+  position: relative;
+  height: 100%;
+}
+
+/* Products link */
+.products-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Chevron */
+.products-chevron {
+  font-size: 11px;
+  color: #616161;
+  transition: transform 200ms ease;
+}
+
+/* ========================================
+   MEGA MENU
+======================================== */
+
+.mega-menu {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px;
+  background-color: var(--background-light);
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease,
+    visibility 200ms ease;
+  z-index: 1000;
+}
+
+/* Small invisible bridge between Products and menu */
+.mega-menu::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+/* ========================================
+   SHOW MENU ON HOVER
+======================================== */
+
+.nav-dropdown:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Rotate arrow */
+.nav-dropdown:hover .products-chevron {
+  transform: rotate(180deg);
+}
+
+/* Products becomes blue */
+.nav-dropdown:hover .products-link {
+  color: var(--primary-color);
+}
+
+/* ========================================
+   MEGA MENU COLUMNS
+======================================== */
+
+.mega-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mega-column h3 {
+  margin: 0 0 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: var(--text-color);
+}
+
+.mega-column a {
+  text-decoration: none;
+
+  color: var(--secondary-text-color);
+
+  font-size: 13px;
+
+  transition:
+    color 150ms ease,
+    transform 150ms ease;
+}
+
+.mega-column a:hover {
+  color: var(--primary-color);
+  transform: translateX(4px);
+}
 
 /* Main-styling */
 

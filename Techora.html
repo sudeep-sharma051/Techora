@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Techora</title>
     <link rel="icon" type="image/png" href="images/Techora Logo.svg" />
-    <link rel="stylesheet" href="Techora.css" />
+    <link rel="stylesheet" href="CSS/Techora.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,7 +39,50 @@
           <nav>
             <a class="nav-links" href="#">Home</a>
             <a class="nav-links" href="#">About</a>
-            <a class="nav-links" href="#">Products</a>
+            <div class="nav-dropdown">
+              <a class="nav-links products-link" href="#">
+                Products
+                <ion-icon name="chevron-down" class="products-chevron">
+                </ion-icon>
+              </a>
+              <div class="mega-menu">
+                <div class="mega-column">
+                  <h3>Gaming</h3>
+
+                  <a href="#">Keyboards</a>
+                  <a href="#">Gaming Mouse</a>
+                  <a href="#">Gamepads</a>
+                  <a href="#">Gaming Headsets</a>
+                  <a href="#">Gaming Chairs</a>
+                  <a href="#">Gaming Desks</a>
+                  <a href="#">Mousepads</a>
+                </div>
+
+                <div class="mega-column">
+                  <h3>PC Components</h3>
+
+                  <a href="#">Graphics Cards</a>
+                  <a href="#">Processors</a>
+                  <a href="#">Motherboards</a>
+                  <a href="#">RAM</a>
+                  <a href="#">SSD</a>
+                  <a href="#">Hard Drives</a>
+                  <a href="#">Power Supply</a>
+                </div>
+
+                <div class="mega-column">
+                  <h3>Accessories</h3>
+
+                  <a href="#">Headsets</a>
+                  <a href="#">Speakers</a>
+                  <a href="#">Webcams</a>
+                  <a href="#">Microphones</a>
+                  <a href="#">Controllers</a>
+                  <a href="#">USB Hubs</a>
+                  <a href="#">Laptop Stands</a>
+                </div>
+              </div>
+            </div>
             <a class="nav-links" href="#">Contact</a>
           </nav>
           <div class="actions">
@@ -469,7 +512,7 @@
       </footer>
     </main>
 
-    <script src="Techora.js"></script>
+    <script src="JS/Techora.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
