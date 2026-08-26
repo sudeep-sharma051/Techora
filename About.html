@@ -12,109 +12,137 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
     <!-- Header -->
-    <header>
-      <div class="container">
-        <div class="header-items">
-          <a class="logo" href="Techora.html" aria-label="Techora Home">
-            <img
-              src="images/Techora Logo.svg"
-              alt="Techora"
-              width="60"
-              height="60"
-            />
-            <span class="logo-name">Techora</span>
-          </a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="Techora.html" aria-label="Techora home">
+          <img
+            src="images/Techora Logo.svg"
+            alt="Techora logo"
+            width="48"
+            height="48"
+          />
+          <span>Techora</span>
+        </a>
 
-          <div class="search">
-            <ion-icon class="icon" name="search"></ion-icon>
-            <input
-              type="search"
-              name="Search"
-              id="Search"
-              placeholder="Search for products"
-            />
-          </div>
+        <div class="search-box">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            id="Search"
+            type="search"
+            placeholder="Search products, categories..."
+            aria-label="Search products"
+          />
+          <button type="button" aria-label="Search">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </div>
 
-          <nav>
-            <a class="nav-links" href="Techora.html">Home</a>
-            <a class="nav-links active" href="about.html">About</a>
-
-            <div class="nav-dropdown">
-              <a class="nav-links products-link" href="#">
-                Products
-                <ion-icon
-                  name="chevron-down"
-                  class="products-chevron"
-                ></ion-icon>
-              </a>
-
-              <div class="mega-menu">
-                <div class="mega-column">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link" href="Techora.html">Home</a>
+          <a class="nav-link active" href="about.html">About</a>
+          <div class="nav-dropdown">
+            <a class="nav-link products-link" href="#products"
+              >Products
+              <ion-icon
+                name="chevron-down-outline"
+                class="products-chevron"
+              ></ion-icon
+            ></a>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <div class="mega-heading">
+                  <span class="mega-icon"
+                    ><ion-icon name="game-controller-outline"></ion-icon
+                  ></span>
                   <h3>Gaming</h3>
-                  <a href="products/gaming-keyboard.html">Keyboards</a>
-                  <a href="products/gaming-mouse.html">Gaming Mouse</a>
-                  <a href="products/gamepad.html">Gamepads</a>
-                  <a href="products/gaming-headset.html">Gaming Headsets</a>
-                  <a href="products/gaming-chair.html">Gaming Chairs</a>
-                  <a href="products/gaming-desk.html">Gaming Desks</a>
-                  <a href="products/mousepad.html">Mousepads</a>
                 </div>
-
-                <div class="mega-column">
+                <a href="products/gaming-keyboard.html"
+                  >Keyboards <span>→</span></a
+                ><a href="products/gaming-mouse.html"
+                  >Gaming Mouse <span>→</span></a
+                ><a href="products/gamepad.html">Gamepads <span>→</span></a
+                ><a href="products/gaming-headset.html"
+                  >Gaming Headsets <span>→</span></a
+                ><a href="products/gaming-chair.html"
+                  >Gaming Chairs <span>→</span></a
+                ><a href="products/gaming-desk.html"
+                  >Gaming Desks <span>→</span></a
+                ><a href="products/mousepad.html">Mousepads <span>→</span></a>
+              </div>
+              <div class="mega-column">
+                <div class="mega-heading">
+                  <span class="mega-icon"
+                    ><ion-icon name="hardware-chip-outline"></ion-icon
+                  ></span>
                   <h3>PC Components</h3>
-                  <a href="products/gpu.html">Graphics Cards</a>
-                  <a href="products/cpu.html">Processors</a>
-                  <a href="products/motherboard.html">Motherboards</a>
-                  <a href="products/ram.html">RAM</a>
-                  <a href="products/ssd.html">SSD</a>
-                  <a href="products/hard-drive.html">Hard Drives</a>
-                  <a href="products/power-supply.html">Power Supply</a>
                 </div>
-
-                <div class="mega-column">
+                <a href="products/gpu.html">Graphics Cards <span>→</span></a
+                ><a href="products/cpu.html">Processors <span>→</span></a
+                ><a href="products/motherboard.html"
+                  >Motherboards <span>→</span></a
+                ><a href="products/ram.html">RAM <span>→</span></a
+                ><a href="products/ssd.html">SSD <span>→</span></a
+                ><a href="products/hard-drive.html"
+                  >Hard Drives <span>→</span></a
+                ><a href="products/power-supply.html"
+                  >Power Supply <span>→</span></a
+                >
+              </div>
+              <div class="mega-column">
+                <div class="mega-heading">
+                  <span class="mega-icon"
+                    ><ion-icon name="headset-outline"></ion-icon
+                  ></span>
                   <h3>Accessories</h3>
-                  <a href="products/headsets.html">Headsets</a>
-                  <a href="products/speakers.html">Speakers</a>
-                  <a href="products/webcams.html">Webcams</a>
-                  <a href="products/microphones.html">Microphones</a>
-                  <a href="products/controllers.html">Controllers</a>
-                  <a href="products/usb-hubs.html">USB Hubs</a>
-                  <a href="products/laptop-stands.html">Laptop Stands</a>
                 </div>
-
-                <div class="mega-column">
+                <a href="products/headsets.html">Headsets <span>→</span></a
+                ><a href="products/speakers.html">Speakers <span>→</span></a
+                ><a href="products/webcams.html">Webcams <span>→</span></a
+                ><a href="products/microphones.html"
+                  >Microphones <span>→</span></a
+                ><a href="products/controllers.html"
+                  >Controllers <span>→</span></a
+                ><a href="products/usb-hubs.html">USB Hubs <span>→</span></a
+                ><a href="products/laptop-stands.html"
+                  >Laptop Stands <span>→</span></a
+                >
+              </div>
+              <div class="mega-column">
+                <div class="mega-heading">
+                  <span class="mega-icon"
+                    ><ion-icon name="code-slash-outline"></ion-icon
+                  ></span>
                   <h3>Software</h3>
-                  <a href="products/operating-systems.html"
-                    >Operating Systems</a
-                  >
-                  <a href="products/antivirus.html">Antivirus</a>
-                  <a href="products/office-software.html">Office Software</a>
-                  <a href="products/design-software.html">Design Software</a>
-                  <a href="products/development-tools.html"
-                    >Development Tools</a
-                  >
                 </div>
+                <a href="products/operating-systems.html"
+                  >Operating Systems <span>→</span></a
+                ><a href="products/antivirus.html">Antivirus <span>→</span></a
+                ><a href="products/office-software.html"
+                  >Office Software <span>→</span></a
+                ><a href="products/design-software.html"
+                  >Design Software <span>→</span></a
+                ><a href="products/development-tools.html"
+                  >Development Tools <span>→</span></a
+                >
               </div>
             </div>
-
-            <a class="nav-links" href="contact.html">Contact</a>
-          </nav>
-
-          <div class="actions">
-            <a class="icon-btn" href="#" aria-label="Shopping cart">
-              <ion-icon class="icon icon-a" name="cart-outline"></ion-icon>
-              <ion-icon class="icon icon-b" name="cart"></ion-icon>
-            </a>
-
-            <button class="actionbutton">Sign up</button>
           </div>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="cart-button" href="#" aria-label="Shopping cart"
+            ><ion-icon name="cart-outline"></ion-icon
+            ><span class="cart-count">0</span></a
+          >
+          <button class="signup-button">Sign up</button>
         </div>
       </div>
     </header>
@@ -146,7 +174,14 @@
             <div class="hero-visual">
               <div class="hero-glow"></div>
               <div class="store-placeholder">
-                <img src="images/Techorastore.png" alt="Techora Store" />
+                <img
+                  src="https://irp.cdn-website.com/md/dmaiip/c979dfc4-16c2-45ed-b658-32cb28e88120.jpg"
+                  alt="Representative modern electronics showroom"
+                />
+                <div class="image-label">
+                  <ion-icon name="storefront-outline"></ion-icon>
+                  <span>Techora Showroom</span>
+                </div>
               </div>
             </div>
           </div>
@@ -238,7 +273,10 @@
         <div class="container">
           <div class="why-grid">
             <div class="why-image">
-              <img src="images/Techorastore.png" alt="Techora Store" />
+              <img
+                src="https://irp.cdn-website.com/md/dmaiip/c979dfc4-16c2-45ed-b658-32cb28e88120.jpg"
+                alt="Representative modern technology showroom"
+              />
             </div>
 
             <div class="why-content">
@@ -382,51 +420,54 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="footer-top">
-          <div class="footer-intro footerinfo">
-            <h1 style="color: #2563eb">Techora</h1>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="Techora.html"
+              ><img
+                src="images/Techora Logo.svg"
+                alt="Techora"
+                width="44"
+                height="44"
+              /><span>Techora</span></a
+            >
             <p>
-              Your one-stop destination for latest electronics and innovative
-              tech solutions.
+              Your one-stop destination for electronics, gaming gear and
+              innovative tech solutions.
             </p>
-
-            <h3 style="margin-top: 10px">Follow Us On</h3>
-
-            <div class="social" style="margin-top: 10px">
-              <span>
-                <img src="images/socials/facebook.png" alt="Facebook" />
-              </span>
-              <span>
-                <img src="images/socials/instagram.png" alt="Instagram" />
-              </span>
-              <span>
-                <img src="images/socials/youtube.png" alt="Youtube" />
-              </span>
-              <span>
-                <img src="images/socials/twitter.png" alt="Twitter" />
-              </span>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><img src="images/socials/facebook.png" alt="" /></a
+              ><a href="#" aria-label="Instagram"
+                ><img src="images/socials/instagram.png" alt="" /></a
+              ><a href="#" aria-label="YouTube"
+                ><img src="images/socials/youtube.png" alt="" /></a
+              ><a href="#" aria-label="Twitter"
+                ><img src="images/socials/twitter.png" alt=""
+              /></a>
             </div>
           </div>
-
-          <div class="footer-quicklinks footerinfo">
-            <h2>Quick Links</h2>
-            <a href="Techora.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="Techora.html#Featured-Categories-Section">Shop</a>
-            <a href="contact.html">Contact</a>
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="Techora.html">Home</a><a href="about.html">About</a
+            ><a href="Techora.html#categories">Categories</a
+            ><a href="Techora.html#deals">Deals</a>
           </div>
-
-          <div class="footer-contacts footerinfo">
-            <h2>Contact</h2>
-            <p>Tel: 01-1234567</p>
-            <p>Phone: 9876543210</p>
-            <p>Email: techoracontact@gmail.com</p>
-            <p>Address: Kathmandu, Nepal</p>
+          <div class="footer-column">
+            <h3>Customer Care</h3>
+            <a href="#">Shipping &amp; Delivery</a><a href="#">Returns</a
+            ><a href="#">FAQs</a><a href="contact.html">Contact us</a>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>01-1234567</p>
+            <p>9876543210</p>
+            <p>techoracontact@gmail.com</p>
+            <p>Kathmandu, Nepal</p>
           </div>
         </div>
-
         <div class="footer-bottom">
           <p>&copy; 2026 Techora. All Rights Reserved.</p>
+          <div><a href="#">Privacy</a><a href="#">Terms</a></div>
         </div>
       </div>
     </footer>
