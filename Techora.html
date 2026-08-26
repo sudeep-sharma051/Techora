@@ -2,516 +2,548 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Techora</title>
-    <link rel="icon" type="image/png" href="images/Techora Logo.svg" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Techora | Technology Made Simple</title>
+    <link rel="icon" type="image/svg+xml" href="images/Techora Logo.svg" />
     <link rel="stylesheet" href="CSS/Techora.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <div class="container">
-        <div class="header-items">
-          <div class="logo">
-            <img
-              src="images/Techora Logo.svg"
-              alt="Techora"
-              width="60px"
-              height="60px"
-            />
-            <span class="logo-name">Techora</span>
-          </div>
-          <div class="search">
-            <ion-icon class="icon" name="search"></ion-icon>
-            <input
-              type="search"
-              name="Search"
-              id="Search"
-              placeholder="Search for products"
-            />
-          </div>
-          <nav>
-            <a class="nav-links" href="#">Home</a>
-            <a class="nav-links" href="About.html">About</a>
-            <div class="nav-dropdown">
-              <a class="nav-links products-link" href="#">
-                Products
-                <ion-icon name="chevron-down" class="products-chevron">
-                </ion-icon>
-              </a>
-              <div class="mega-menu">
-                <div class="mega-column">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="Techora.html"
+          ><img
+            src="images/Techora Logo.svg"
+            alt="Techora"
+            width="48"
+            height="48"
+          /><span>Techora</span></a
+        >
+        <div class="search-box">
+          <ion-icon name="search-outline"></ion-icon
+          ><input
+            id="Search"
+            type="search"
+            placeholder="Search products, categories..."
+          /><button aria-label="Search">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </div>
+        <nav class="main-nav">
+          <a class="nav-link active" href="Techora.html">Home</a
+          ><a class="nav-link" href="About.html">About</a>
+          <div class="nav-dropdown">
+            <a class="nav-link products-link" href="#categories"
+              >Products
+              <ion-icon
+                name="chevron-down-outline"
+                class="products-chevron"
+              ></ion-icon
+            ></a>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <div class="mega-heading">
+                  <span class="mega-icon"
+                    ><ion-icon name="game-controller-outline"></ion-icon
+                  ></span>
                   <h3>Gaming</h3>
-
-                  <a href="#">Keyboards</a>
-                  <a href="#">Gaming Mouse</a>
-                  <a href="#">Gamepads</a>
-                  <a href="#">Gaming Headsets</a>
-                  <a href="#">Gaming Chairs</a>
-                  <a href="#">Gaming Desks</a>
-                  <a href="#">Mousepads</a>
                 </div>
-
-                <div class="mega-column">
+                <a href="products/gaming-keyboard.html"
+                  >Keyboards <span>→</span></a
+                ><a href="products/gaming-mouse.html"
+                  >Gaming Mouse <span>→</span></a
+                ><a href="products/gamepad.html">Gamepads <span>→</span></a
+                ><a href="products/gaming-headset.html"
+                  >Gaming Headsets <span>→</span></a
+                ><a href="products/gaming-chair.html"
+                  >Gaming Chairs <span>→</span></a
+                ><a href="products/gaming-desk.html"
+                  >Gaming Desks <span>→</span></a
+                >
+              </div>
+              <div class="mega-column">
+                <div class="mega-heading">
+                  <span class="mega-icon"
+                    ><ion-icon name="hardware-chip-outline"></ion-icon
+                  ></span>
                   <h3>PC Components</h3>
-
-                  <a href="#">Graphics Cards</a>
-                  <a href="#">Processors</a>
-                  <a href="#">Motherboards</a>
-                  <a href="#">RAM</a>
-                  <a href="#">SSD</a>
-                  <a href="#">Hard Drives</a>
-                  <a href="#">Power Supply</a>
                 </div>
-
-                <div class="mega-column">
+                <a href="products/gpu.html">Graphics Cards <span>→</span></a>
+                <a href="products/cpu.html">Processors <span>→</span></a>
+                <a href="products/motherboard.html"
+                  >Motherboards<span>→</span></a
+                >
+                <a href="products/ram.html">RAM <span>→</span></a>
+                <a href="products/ssd.html">SSD <span>→</span></a>
+                <a href="products/power-supply.html"
+                  >Power Supply <span>→</span></a
+                >
+              </div>
+              <div class="mega-column">
+                <div class="mega-heading">
+                  <span class="mega-icon"
+                    ><ion-icon name="headset-outline"></ion-icon
+                  ></span>
                   <h3>Accessories</h3>
-
-                  <a href="#">Headsets</a>
-                  <a href="#">Speakers</a>
-                  <a href="#">Webcams</a>
-                  <a href="#">Microphones</a>
-                  <a href="#">Controllers</a>
-                  <a href="#">USB Hubs</a>
-                  <a href="#">Laptop Stands</a>
                 </div>
+                <a href="products/headsets.html">Headsets <span>→</span></a
+                ><a href="products/speakers.html">Speakers <span>→</span></a
+                ><a href="products/webcams.html">Webcams <span>→</span></a
+                ><a href="products/microphones.html"
+                  >Microphones <span>→</span></a
+                ><a href="products/controllers.html"
+                  >Controllers <span>→</span></a
+                ><a href="products/usb-hubs.html">USB Hubs <span>→</span></a>
+              </div>
+              <div class="mega-column">
+                <div class="mega-heading">
+                  <span class="mega-icon"
+                    ><ion-icon name="code-slash-outline"></ion-icon
+                  ></span>
+                  <h3>Software</h3>
+                </div>
+                <a href="products/operating-systems.html"
+                  >Operating Systems <span>→</span></a
+                ><a href="products/antivirus.html">Antivirus <span>→</span></a
+                ><a href="products/office-software.html"
+                  >Office Software <span>→</span></a
+                ><a href="products/design-software.html"
+                  >Design Software <span>→</span></a
+                ><a href="products/development-tools.html"
+                  >Development Tools <span>→</span></a
+                >
               </div>
             </div>
-            <a class="nav-links" href="#">Contact</a>
-          </nav>
-          <div class="actions">
-            <div class="icon-btn">
-              <ion-icon class="icon icon-a" name="cart-outline"></ion-icon>
-              <ion-icon class="icon icon-b" name="cart"></ion-icon>
-            </div>
-
-            <button class="actionbutton">Sign up</button>
           </div>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a class="cart-button" href="#" aria-label="Shopping cart"
+            ><ion-icon name="cart-outline"></ion-icon
+            ><span class="cart-count">0</span></a
+          ><button class="signup-button">Sign up</button>
         </div>
       </div>
     </header>
-    <!-- Main Section-->
     <main>
-      <!-- Carousel Section -->
-      <section id="Carousel-Section">
+      <section class="hero-section">
         <div class="container">
-          <div class="carousel-item" id="carousel">
-            <div class="slide is-active" data-color="#4f7dff">
-              <img
-                src="images/Artboard-1.png"
-                alt="Slide 1"
-                draggable="false"
-              />
+          <div class="hero-wrap">
+            <div class="hero-carousel" id="carousel">
+              <div class="slide is-active" data-color="#2563eb">
+                <img
+                  src="images/Artboard-1.png"
+                  alt="Techora promotion"
+                  draggable="false"
+                />
+              </div>
+              <div class="slide" data-color="#8b5cf6">
+                <img
+                  src="images/Artboard-2.png"
+                  alt="Techora promotion"
+                  draggable="false"
+                />
+              </div>
+              <div class="slide" data-color="#14b8a6">
+                <img
+                  src="images/Artboard-3.png"
+                  alt="Techora promotion"
+                  draggable="false"
+                />
+              </div>
+              <div class="slide" data-color="#f59e0b">
+                <img
+                  src="images/Artboard-4.png"
+                  alt="Techora promotion"
+                  draggable="false"
+                />
+              </div>
+              <div class="slide" data-color="#f43f5e">
+                <img
+                  src="images/Artboard-5.png"
+                  alt="Techora promotion"
+                  draggable="false"
+                />
+              </div>
+              <button class="arrow prev" id="prevBtn" aria-label="Previous">
+                <ion-icon name="chevron-back-outline"></ion-icon></button
+              ><button class="arrow next" id="nextBtn" aria-label="Next">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+              <div class="dots" id="dots"></div>
             </div>
-            <div class="slide" data-color="#a855f7">
-              <img
-                src="images/Artboard-2.png"
-                alt="Slide 2"
-                draggable="false"
-              />
-            </div>
-            <div class="slide" data-color="#22d3c9">
-              <img
-                src="images/Artboard-3.png"
-                alt="Slide 3"
-                draggable="false"
-              />
-            </div>
-            <div class="slide" data-color="#f5a524">
-              <img
-                src="images/Artboard-4.png"
-                alt="Slide 4"
-                draggable="false"
-              />
-            </div>
-            <div class="slide" data-color="#fb7185">
-              <img
-                src="images/Artboard-5.png"
-                alt="Slide 5"
-                draggable="false"
-              />
-            </div>
-
-            <button class="arrow prev" id="prevBtn" aria-label="Previous slide">
-              <ion-icon class="arrows" name="chevron-back-outline"></ion-icon>
-            </button>
-            <button class="arrow next" id="nextBtn" aria-label="Next slide">
-              <ion-icon
-                class="arrows"
-                name="chevron-forward-outline"
-              ></ion-icon>
-            </button>
-
-            <div class="dots" id="dots"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Featured Categories -->
-      <section id="Featured-Categories-Section">
-        <div class="container">
-          <div class="featured-items">
-            <div class="section-heading">
-              <h2>Featured Categories</h2>
-              <a href="#">View All</a>
-            </div>
-
-            <div class="categories-cards">
-              <a href="#" class="category-card">
-                <div class="category-image">
-                  <img src="images/categories/keyboard.png" alt="Keyboards" />
+            <div class="hero-side">
+              <a class="mini-promo promo-blue" href="#categories"
+                ><div>
+                  <span>EXPLORE</span>
+                  <h3>Build your<br />perfect setup.</h3>
+                  <strong
+                    >Shop categories
+                    <ion-icon name="arrow-forward-outline"></ion-icon
+                  ></strong>
                 </div>
-                <div class="category-info">
-                  <h3>Keyboards</h3>
-                  <p>14 Products</p>
+                <ion-icon
+                  class="promo-icon"
+                  name="desktop-outline"
+                ></ion-icon></a
+              ><a class="mini-promo promo-dark" href="#deals"
+                ><div>
+                  <span>DEALS & OFFERS</span>
+                  <h3>Tech worth<br />talking about.</h3>
+                  <strong
+                    >See today's deals
+                    <ion-icon name="arrow-forward-outline"></ion-icon
+                  ></strong>
                 </div>
-              </a>
-
-              <a href="#" class="category-card">
-                <div class="category-image">
-                  <img src="images/categories/mouse.png" alt="Mouse" />
-                </div>
-                <div class="category-info">
-                  <h3>Mouse</h3>
-                  <p>16 Products</p>
-                </div>
-              </a>
-
-              <a href="#" class="category-card">
-                <div class="category-image">
-                  <img src="images/categories/gamepad.png" alt="Controlers" />
-                </div>
-                <div class="category-info">
-                  <h3>Controlers</h3>
-                  <p>6 Products</p>
-                </div>
-              </a>
-
-              <a href="#" class="category-card">
-                <div class="category-image">
-                  <img
-                    src="images/categories/headset.png"
-                    alt="Gaming Headphones"
-                  />
-                </div>
-                <div class="category-info">
-                  <h3>Headset</h3>
-                  <p>10 Products</p>
-                </div>
-              </a>
-
-              <a href="#" class="category-card">
-                <div class="category-image">
-                  <img
-                    src="images/categories/gaming-chair.png"
-                    alt="Gaming Chair"
-                  />
-                </div>
-                <div class="category-info">
-                  <h3>Gaming Chair</h3>
-                  <p>6 Products</p>
-                </div>
-              </a>
-
-              <a href="#" class="category-card">
-                <div class="category-image">
-                  <img src="images/categories/iem.png" alt="IEM" />
-                </div>
-                <div class="category-info">
-                  <h3>IEM</h3>
-                  <p>4 Products</p>
-                </div>
-              </a>
-
-              <a href="#" class="category-card">
-                <div class="category-image">
-                  <img
-                    src="images/categories/gaming-desk.png"
-                    alt="Gaming Desk"
-                  />
-                </div>
-                <div class="category-info">
-                  <h3>Gaming Desk</h3>
-                  <p>8 Products</p>
-                </div>
-              </a>
-
-              <a href="#" class="category-card">
-                <div class="category-image">
-                  <img
-                    src="images/categories/gaming-chair.png"
-                    alt="Gaming Chair"
-                  />
-                </div>
-                <div class="category-info">
-                  <h3>Gaming Chair</h3>
-                  <p>12 Products</p>
-                </div>
-              </a>
+                <ion-icon class="promo-icon" name="flash-outline"></ion-icon
+              ></a>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- WHY CHOOSE US -->
-      <section id="whyus">
-        <div class="container">
-          <div class="whyus-content">
-            <div class="whyus-items delivery">
-              <div class="whyus-items-image">
-                <img
-                  src="images/icons/delivery.svg"
-                  alt="delivery"
-                  width="60"
-                  height="60"
-                />
-              </div>
-              <div class="whyus-items-info">
-                <h3>Nationwide Delivery</h3>
-                <p>Fast delivery all over Nepal</p>
-              </div>
+      <section class="trust-section">
+        <div class="container trust-grid">
+          <div class="trust-item">
+            <span class="trust-icon"
+              ><ion-icon name="rocket-outline"></ion-icon
+            ></span>
+            <div>
+              <strong>Nationwide Delivery</strong>
+              <p>Fast delivery across Nepal</p>
             </div>
-            <div class="whyus-items payments">
-              <div class="whyus-items-image">
-                <img
-                  src="images/icons/secure.svg"
-                  alt="delivery"
-                  width="60"
-                  height="60"
-                />
-              </div>
-              <div class="whyus-items-info">
-                <h3>Secure Payments</h3>
-                <p>100% safe and secure checkout</p>
-              </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"
+              ><ion-icon name="shield-checkmark-outline"></ion-icon
+            ></span>
+            <div>
+              <strong>Secure Payments</strong>
+              <p>Safe & protected checkout</p>
             </div>
-            <div class="whyus-items returns">
-              <div class="whyus-items-image">
-                <img
-                  src="images/icons/return.svg"
-                  alt="delivery"
-                  width="60"
-                  height="60"
-                />
-              </div>
-              <div class="whyus-items-info">
-                <h3>14-Day Returns</h3>
-                <p>Hastle-free returned guaranteed</p>
-              </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"
+              ><ion-icon name="refresh-outline"></ion-icon
+            ></span>
+            <div>
+              <strong>14-Day Returns</strong>
+              <p>Hassle-free returns</p>
             </div>
-            <div class="whyus-items support">
-              <div class="whyus-items-image">
-                <img
-                  src="images/icons/customer-support.svg"
-                  alt="delivery"
-                  width="60"
-                  height="60"
-                />
-              </div>
-              <div class="whyus-items-info">
-                <h3>Premium Support</h3>
-                <p>24/7 customer support</p>
-              </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"
+              ><ion-icon name="headset-outline"></ion-icon
+            ></span>
+            <div>
+              <strong>Premium Support</strong>
+              <p>We're here when you need us</p>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- BEST SELLER -->
-      <section id="best-seller">
+      <section class="section categories-section" id="categories">
         <div class="container">
-          <div class="bestseller-items">
-            <div class="section-heading">
-              <h2>Best Sellers</h2>
-              <a href="#">View All</a>
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">SHOP BY CATEGORY</span>
+              <h2>Find the right tech for you.</h2>
             </div>
-
-            <div class="bestseller-cards">
-              <a href="#" class="bestseller-card">
-                <div class="bestseller-image">
-                  <img src="images/categories/keyboard.png" alt="Keyboards" />
-                </div>
-                <div class="bestseller-info">
-                  <h3>Keyboards</h3>
-                  <button class="bestsellerbutton">Add to cart</button>
-                </div>
-              </a>
-
-              <a href="#" class="bestseller-card">
-                <div class="bestseller-image">
-                  <img src="images/categories/mouse.png" alt="Mouse" />
-                </div>
-                <div class="bestseller-info">
-                  <h3>Mouse</h3>
-                  <button class="bestsellerbutton">Add to cart</button>
-                </div>
-              </a>
-
-              <a href="#" class="bestseller-card">
-                <div class="bestseller-image">
-                  <img src="images/categories/gamepad.png" alt="Controlers" />
-                </div>
-                <div class="bestseller-info">
-                  <h3>Controlers</h3>
-                  <button class="bestsellerbutton">Add to cart</button>
-                </div>
-              </a>
-
-              <a href="#" class="bestseller-card">
-                <div class="bestseller-image">
-                  <img
-                    src="images/categories/headset.png"
-                    alt="Gaming Headphones"
-                  />
-                </div>
-                <div class="bestseller-info">
-                  <h3>Headset</h3>
-                  <button class="bestsellerbutton">Add to cart</button>
-                </div>
-              </a>
-
-              <a href="#" class="bestseller-card">
-                <div class="bestseller-image">
-                  <img
-                    src="images/categories/gaming-chair.png"
-                    alt="Gaming Chair"
-                  />
-                </div>
-                <div class="bestseller-info">
-                  <h3>Gaming Chair</h3>
-                  <button class="bestsellerbutton">Add to cart</button>
-                </div>
-              </a>
-
-              <a href="#" class="bestseller-card">
-                <div class="bestseller-image">
-                  <img src="images/categories/iem.png" alt="IEM" />
-                </div>
-                <div class="bestseller-info">
-                  <h3>IEM</h3>
-                  <button class="bestsellerbutton">Add to cart</button>
-                </div>
-              </a>
-
-              <a href="#" class="bestseller-card">
-                <div class="bestseller-image">
-                  <img
-                    src="images/categories/gaming-desk.png"
-                    alt="Gaming Desk"
-                  />
-                </div>
-                <div class="bestseller-info">
-                  <h3>Gaming Desk</h3>
-                  <button class="bestsellerbutton">Add to cart</button>
-                </div>
-              </a>
-
-              <a href="#" class="bestseller-card">
-                <div class="bestseller-image">
-                  <img
-                    src="images/categories/gaming-chair.png"
-                    alt="Gaming Chair"
-                  />
-                </div>
-                <div class="bestseller-info">
-                  <h3>Gaming Chair</h3>
-                  <button class="bestsellerbutton">Add to cart</button>
-                </div>
-              </a>
-            </div>
+            <a class="view-link" href="#"
+              >View all <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="category-grid">
+            <a href="products/gaming-keyboard.html" class="category-card"
+              ><div class="category-image">
+                <img src="images/categories/keyboard.png" alt="Keyboards" />
+              </div>
+              <div class="category-info">
+                <h3>Keyboards</h3>
+                <span>14 Products</span
+                ><ion-icon name="arrow-forward-outline"></ion-icon></div></a
+            ><a href="products/gaming-mouse.html" class="category-card"
+              ><div class="category-image">
+                <img src="images/categories/mouse.png" alt="Gaming mouse" />
+              </div>
+              <div class="category-info">
+                <h3>Gaming Mouse</h3>
+                <span>16 Products</span
+                ><ion-icon name="arrow-forward-outline"></ion-icon></div></a
+            ><a href="products/gamepad.html" class="category-card"
+              ><div class="category-image">
+                <img src="images/categories/gamepad.png" alt="Gamepads" />
+              </div>
+              <div class="category-info">
+                <h3>Gamepads</h3>
+                <span>6 Products</span
+                ><ion-icon name="arrow-forward-outline"></ion-icon></div></a
+            ><a href="products/gaming-headset.html" class="category-card"
+              ><div class="category-image">
+                <img
+                  src="images/categories/headset.png"
+                  alt="Gaming headsets"
+                />
+              </div>
+              <div class="category-info">
+                <h3>Headsets</h3>
+                <span>10 Products</span
+                ><ion-icon name="arrow-forward-outline"></ion-icon></div></a
+            ><a href="products/gaming-chair.html" class="category-card"
+              ><div class="category-image">
+                <img
+                  src="images/categories/gaming-chair.png"
+                  alt="Gaming chairs"
+                />
+              </div>
+              <div class="category-info">
+                <h3>Gaming Chairs</h3>
+                <span>6 Products</span
+                ><ion-icon name="arrow-forward-outline"></ion-icon></div></a
+            ><a href="products/iem.html" class="category-card"
+              ><div class="category-image">
+                <img src="images/categories/iem.png" alt="IEM" />
+              </div>
+              <div class="category-info">
+                <h3>IEM</h3>
+                <span>4 Products</span
+                ><ion-icon name="arrow-forward-outline"></ion-icon></div></a
+            ><a href="products/gaming-desk.html" class="category-card"
+              ><div class="category-image">
+                <img
+                  src="images/categories/gaming-desk.png"
+                  alt="Gaming desks"
+                />
+              </div>
+              <div class="category-info">
+                <h3>Gaming Desks</h3>
+                <span>8 Products</span
+                ><ion-icon name="arrow-forward-outline"></ion-icon></div></a
+            ><a href="products/gaming-chair.html" class="category-card"
+              ><div class="category-image">
+                <img
+                  src="images/categories/gaming-chair.png"
+                  alt="Gaming setup"
+                />
+              </div>
+              <div class="category-info">
+                <h3>Gaming Setup</h3>
+                <span>12 Products</span
+                ><ion-icon name="arrow-forward-outline"></ion-icon></div
+            ></a>
           </div>
         </div>
       </section>
-
-      <!-- DEALS SECTION -->
-      <section id="deals">
+      <section class="section picks-section">
         <div class="container">
-          <div class="deals-content">
-            <div class="deals-item discount">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">POPULAR PICKS</span>
+              <h2>What shoppers are looking for.</h2>
+            </div>
+            <a class="view-link" href="#"
+              >Browse all <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="pick-grid">
+            <a href="products/gaming-keyboard.html" class="pick-card"
+              ><div class="pick-badge">POPULAR</div>
+              <div class="pick-image">
+                <img src="images/categories/keyboard.png" alt="Keyboards" />
+              </div>
+              <div class="pick-content">
+                <span>GAMING</span>
+                <h3>Mechanical Keyboards</h3>
+                <p>Upgrade the feel of every keystroke.</p>
+                <strong
+                  >Explore <ion-icon name="arrow-forward-outline"></ion-icon
+                ></strong></div></a
+            ><a href="products/gaming-mouse.html" class="pick-card"
+              ><div class="pick-badge">POPULAR</div>
+              <div class="pick-image">
+                <img src="images/categories/mouse.png" alt="Gaming mouse" />
+              </div>
+              <div class="pick-content">
+                <span>GAMING</span>
+                <h3>Gaming Mice</h3>
+                <p>Precision, speed and control.</p>
+                <strong
+                  >Explore <ion-icon name="arrow-forward-outline"></ion-icon
+                ></strong></div></a
+            ><a href="products/gaming-headset.html" class="pick-card"
+              ><div class="pick-badge">FEATURED</div>
+              <div class="pick-image">
+                <img src="images/categories/headset.png" alt="Gaming headset" />
+              </div>
+              <div class="pick-content">
+                <span>AUDIO</span>
+                <h3>Gaming Headsets</h3>
+                <p>Hear every detail in your game.</p>
+                <strong
+                  >Explore <ion-icon name="arrow-forward-outline"></ion-icon
+                ></strong></div></a
+            ><a href="products/gamepad.html" class="pick-card"
+              ><div class="pick-badge">FEATURED</div>
+              <div class="pick-image">
+                <img src="images/categories/gamepad.png" alt="Gamepad" />
+              </div>
+              <div class="pick-content">
+                <span>GAMING</span>
+                <h3>Gamepads</h3>
+                <p>Comfortable control for every session.</p>
+                <strong
+                  >Explore <ion-icon name="arrow-forward-outline"></ion-icon
+                ></strong></div
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="deals-section" id="deals">
+        <div class="container">
+          <div class="deal-banner">
+            <div class="deal-copy">
+              <span class="eyebrow">LIMITED-TIME OFFERS</span>
+              <h2>Better tech.<br /><em>Better deals.</em></h2>
+              <p>
+                Check out our latest promotions and discover something worth
+                adding to your setup.
+              </p>
+              <a href="#" class="deal-button"
+                >Explore Deals <ion-icon name="arrow-forward-outline"></ion-icon
+              ></a>
+            </div>
+            <div class="deal-images">
               <img
                 src="images/deals/headphonesoff.png"
-                alt="Headphones Deal"
-                width="100%"
-                height="100%"
-              />
-            </div>
-            <div class="deals-item newlaunch">
-              <img
-                src="images/deals/laptopdeals.png"
-                alt="Laptop Deals"
-                width="100%"
-                height="100%"
-              />
+                alt="Headphones offer"
+              /><img src="images/deals/laptopdeals.png" alt="Laptop deals" />
             </div>
           </div>
         </div>
       </section>
-
-      <!-- FOOTER SECTION -->
-      <footer>
+      <section class="section why-section">
         <div class="container">
-          <div class="footer-top">
-            <div class="footer-intro footerinfo">
-              <h1 style="color: #2563eb">Techora</h1>
+          <div class="why-layout">
+            <div class="why-copy">
+              <span class="eyebrow">WHY TECHORA?</span>
+              <h2>Technology shopping without the headache.</h2>
               <p>
-                Your one-stop destination for latest electronics and inovative
-                tech solutions.
+                Discover useful technology, make informed choices, and get
+                support when you need it.
               </p>
-              <h3 style="margin-top: 10px">Follow US On</h3>
-              <div class="social" style="margin-top: 10px">
-                <span>
-                  <img src="images/socials/facebook.png" alt="Facebook" />
-                </span>
-                <span>
-                  <img src="images/socials/instagram.png" alt="Instagram" />
-                </span>
-                <span>
-                  <img src="images/socials/youtube.png" alt="Youtube" />
-                </span>
-                <span>
-                  <img src="images/socials/twitter.png" alt="Twitter" />
-                </span>
+              <a href="about.html" class="outline-button"
+                >Learn more about us
+                <ion-icon name="arrow-forward-outline"></ion-icon
+              ></a>
+            </div>
+            <div class="why-features">
+              <div class="feature-card">
+                <span
+                  ><ion-icon name="checkmark-circle-outline"></ion-icon
+                ></span>
+                <h3>Curated Selection</h3>
+                <p>
+                  Products organized around how people actually use technology.
+                </p>
+              </div>
+              <div class="feature-card">
+                <span><ion-icon name="pricetag-outline"></ion-icon></span>
+                <h3>Clear Value</h3>
+                <p>
+                  Simple product information to help you compare what matters.
+                </p>
+              </div>
+              <div class="feature-card">
+                <span><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                <h3>Helpful Support</h3>
+                <p>Guidance before and after your purchase.</p>
+              </div>
+              <div class="feature-card">
+                <span><ion-icon name="location-outline"></ion-icon></span>
+                <h3>Based in Nepal</h3>
+                <p>A technology store built with Nepali shoppers in mind.</p>
               </div>
             </div>
-            <div class="footer-map footerinfo">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54087.84395812716!2d85.28493299963506!3d27.709030241827836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e1!3m2!1sen!2snp!4v1787411618406!5m2!1sen!2snp"
-                width="200"
-                height="200"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-              ></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-card">
+            <div>
+              <span class="eyebrow">STAY IN THE LOOP</span>
+              <h2>New gear. New deals. No noise.</h2>
+              <p>Get occasional updates about new products and promotions.</p>
             </div>
-            <div class="footer-quicklinks footerinfo">
-              <h2>Quick Links</h2>
-              <p style="margin-top: 10px; cursor: pointer">Shop</p>
-              <p style="margin-top: 10px; cursor: pointer">Store</p>
-              <p style="margin-top: 10px; cursor: pointer">Blog</p>
-              <p style="margin-top: 10px; cursor: pointer">Promotion</p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+              /><button>
+                Subscribe <ion-icon name="arrow-forward-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="brand" href="Techora.html"
+                ><img
+                  src="images/techoralogo-nobg.png"
+                  alt="Techora"
+                  width="44"
+                  height="44"
+                /><span>Techora</span></a
+              >
+              <p>
+                Your one-stop destination for electronics, gaming gear and
+                innovative tech solutions.
+              </p>
+              <div class="social-links">
+                <a href="#"
+                  ><img src="images/socials/facebook.png" alt="Facebook" /></a
+                ><a href="#"
+                  ><img src="images/socials/instagram.png" alt="Instagram" /></a
+                ><a href="#"
+                  ><img src="images/socials/youtube.png" alt="YouTube" /></a
+                ><a href="#"
+                  ><img src="images/socials/twitter.png" alt="Twitter"
+                /></a>
+              </div>
             </div>
-            <div class="footer-contacts footerinfo">
-              <h2>Contact</h2>
-              <p style="margin-top: 10px">Tel: 01-1234567</p>
-              <p style="margin-top: 10px">Phone: 9876543210</p>
-              <p style="margin-top: 10px">Email: techoracontact@gmail.com</p>
-              <p style="margin-top: 10px">Address: Kathmandu</p>
+            <div class="footer-column">
+              <h3>Explore</h3>
+              <a href="index.html">Home</a><a href="about.html">About</a
+              ><a href="#categories">Categories</a><a href="#deals">Deals</a>
+            </div>
+            <div class="footer-column">
+              <h3>Customer Care</h3>
+              <a href="#">Shipping & Delivery</a><a href="#">Returns</a
+              ><a href="#">FAQs</a><a href="contact.html">Contact us</a>
+            </div>
+            <div class="footer-column">
+              <h3>Contact</h3>
+              <p>01-1234567</p>
+              <p>9876543210</p>
+              <p>techoracontact@gmail.com</p>
+              <p>Kathmandu, Nepal</p>
             </div>
           </div>
           <div class="footer-bottom">
             <p>&copy; 2026 Techora. All Rights Reserved.</p>
+            <div><a href="#">Privacy</a><a href="#">Terms</a></div>
           </div>
         </div>
       </footer>
     </main>
-
     <script src="JS/Techora.js"></script>
     <script
       type="module"
